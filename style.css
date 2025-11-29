@@ -64,3 +64,22 @@ button:hover {
   font-size: 0.9em;
   color: #bbb;
 }
+
+.match-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.match-list li {
+  background-color: #2c2c2c;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.match-list li:hover {
+  background-color: #444;
+}

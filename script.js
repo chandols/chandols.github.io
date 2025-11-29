@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("searchInput");
   const resultDiv = document.getElementById("result");
 
+  let currentItem = null;
+
   input.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
       searchCollection();
@@ -14,29 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const query = input.value.trim().toLowerCase();
     resultDiv.innerHTML = "";
 
-    const matches = clothingData.filter(item =>
+    const match = clothingData.find(item =>
       item.name.toLowerCase().includes(query)
     );
 
-    if (matches.length === 0) {
-      resultDiv.innerHTML = `<p>No matching collections found.</p>`;
+    if (!match) {
+      resultDiv.innerHTML = `<p>No matching collection found.</p>`;
       return;
     }
 
-    if (matches.length === 1) {
-      displayDetails(matches[0]);
-    } else {
-      const list = document.createElement("ul");
-      list.className = "match-list";
-      matches.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = `${item.name} (${item.number}/60)`;
-        li.addEventListener("click", () => displayDetails(item));
-        list.appendChild(li);
-      });
-      resultDiv.innerHTML = `<p>Multiple matches found. Click one:</p>`;
-      resultDiv.appendChild(list);
-    }
+    currentItem = match;
+    displayDetails(currentItem);
   }
 
   function displayDetails(item) {
@@ -49,6 +39,24 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Price:</strong> ${price}</p>
         <p><strong>Audience:</strong> ${audience}</p>
       </div>
+      <div class="nav-buttons">
+        <button id="prevBtn" ${number === 1 ? "disabled" : ""}>← Previous</button>
+        <button id="nextBtn" ${number === 60 ? "disabled" : ""}>Next →</button>
+      </div>
     `;
+
+    document.getElementById("prevBtn")?.addEventListener("click", () => {
+      if (item.number > 1) {
+        currentItem = clothingData.find(c => c.number === item.number - 1);
+        displayDetails(currentItem);
+      }
+    });
+
+    document.getElementById("nextBtn")?.addEventListener("click", () => {
+      if (item.number < 60) {
+        currentItem = clothingData.find(c => c.number === item.number + 1);
+        displayDetails(currentItem);
+      }
+    });
   }
 });

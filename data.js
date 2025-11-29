@@ -59,3 +59,4 @@ const clothingData = [
   { number: 58, name: "Smart Casual", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Businessmen" },
   { number: 59, name: "Street Anarchy", style: "Streetwear", quality: "Medium quality", price: "Affordable", audience: "Teenagers and young adults" },
   { number: 60, name: "Business style of the future", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Businessmen" },
+];

@@ -106,6 +106,35 @@ button:hover {
   background-color: #444;
 }
 
+/* NAVIGATION BUTTONS */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.nav-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #03dac6;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-buttons button:disabled {
+  background-color: #555;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.nav-buttons button:hover:not(:disabled) {
+  background-color: #018786;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 16px;

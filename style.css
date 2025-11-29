@@ -8,11 +8,12 @@ body {
 
 .container {
   max-width: 700px;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 20px;
   background-color: #1e1e1e;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  box-sizing: border-box;
 }
 
 h1 {
@@ -27,7 +28,10 @@ h1 {
   text-align: center;
 }
 
-input[type="text"] {
+input[type="text"]:focus,
+button:focus {
+  outline: none;
+  box-sizing: border-box;
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
@@ -46,6 +50,7 @@ button {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
@@ -82,4 +87,35 @@ button:hover {
 
 .match-list li:hover {
   background-color: #444;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .result-card {
+    padding: 12px;
+  }
+
+  .match-list li {
+    font-size: 16px;
+    padding: 10px;
+  }
 }

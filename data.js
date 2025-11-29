@@ -56,6 +56,6 @@ const clothingData = [
   { number: 55, name: "Urban cyberpunk", style: "Technological clothes", quality: "Premium quality", price: "High", audience: "Premium class" },
   { number: 56, name: "Travel Fashion", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Middle class" },
   { number: 57, name: "Hipster style", style: "Retro style", quality: "Medium quality", price: "Medium", audience: "Middle class" },
-  { number: 58, name: "Smart Casual", style: "Business style", quality: "Premium fabrics", price: "High", audience" "Businessmen" },
+  { number: 58, name: "Smart Casual", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Businessmen" },
   { number: 59, name: "Street Anarchy", style: "Streetwear", quality: "Medium quality", price: "Affordable", audience: "Teenagers and young adults" },
   { number: 60, name: "Business style of the future", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Businessmen" },

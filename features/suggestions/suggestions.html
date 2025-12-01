@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6T1C2S7P0"></script>
@@ -19,9 +20,9 @@
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/common.js"></script>
+  <title>Suggestions</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/common.js"></script>
 
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -30,48 +31,63 @@
 
 
 <body>
-  <nav class="menu">
+<nav class="menu">
   <a href="/index.html" class="nav-link">Home</a>
   <a href="/features/ccl_f1/ccl.html" class="nav-link">Lookup</a>
-  <a href="/features/suggestions/suggestions.html" class="nav-link">Suggestions</a>
+  <a href="/suggestions/suggestions.html" class="nav-link">Suggestions</a>
 </nav>
 
-  <div class="container">
-    <h1>Welcome to UBET (Uranium's Business Empire Toolbox)</h1>
-    <p>Explore the tools below:</p>
+<div class="form-container">
+  <h1>Make a Suggestion / Report a Bug</h1>
 
-    <div class="feature-grid">
-      <div class="feature-card" onclick="location.href='features/ccl_f1/ccl.html'">
-        <h2>Clothing Collection Lookup</h2>
-        <p>Search through collections and styles.</p>
-      </div>
+  <label for="nickname">Your nickname:</label>
+  <input type="text" id="nickname" placeholder="Enter your nickname">
 
-      <div class="feature-card disabled">
-        <h2>More Coming Soon</h2>
-        <p>Stay tuned for new tools.</p>
-      </div>
+  <label for="category">Choose category:</label>
+  <select id="category">
+    <option value="">-- Select --</option>
+    <option value="suggestion">Suggestion</option>
+    <option value="bug">Bug Report</option>
+  </select>
 
-  <div class="suggestion-bar" onclick="location.href='features/suggestions/suggestions.html'">
-  Make a Suggestion / Report a Bug
-</div>
+  <div id="suggestionOptions" class="subgroup">
+    <label for="suggestionType">Suggestion type:</label>
+    <select id="suggestionType">
+      <option value="">-- Select --</option>
+      <option value="new">New Function</option>
+      <option value="existing">Existing Function</option>
+      <option value="website">Website</option>
+    </select>
+
+    <div id="existingFunctionOptions" class="subgroup">
+      <label for="functionName">Choose function:</label>
+      <select id="functionName">
+        <option value="">-- Select --</option>
+        <option value="lookup">Lookup</option>
+      </select>
     </div>
-    <h2>V1.1 out now!</h2>
-    <b>What's new?</b>
-    <p> -Navigation arrows</p>
-        -Homepage</p>
-        -Credits</p>
-        -Suggestions page</p>
-        -Navigation Menu</p>
-        -Made a logo and name (UBET)</p>
-        -Discord Server</p>
-        -Clothing Collection Lookup optimization</p>
-    <footer>
-      <h2>Credits</h2>
-      <p>Created by Uranium. Thanks to the people who gave suggestions and reported bugs.</p>
-    </footer>
-
-   
   </div>
+
+  <div id="bugOptions" class="subgroup">
+    <label for="bugArea">Bug area:</label>
+    <select id="bugArea">
+      <option value="">-- Select --</option>
+      <option value="whole">Whole Website</option>
+      <option value="homepage">Homepage</option>
+      <option value="lookup">Lookup</option>
+      <option value="suggestions">Suggestions</option>
+    </select>
+  </div>
+
+  <label for="message">Your message:</label>
+  <textarea id="message" rows="6" placeholder="Describe your suggestion or bug..."></textarea>
+
+  <button id="submitBtn">Submit</button>
+
+  <p class="info-note">
+    ℹ️ Your suggestion or bug report will be sent to the Discord server for others to see too.
+  </p>
+</div>
 
   <!-- Default Bottom (Socials and version and stuff) -->
 <a href="https://discord.gg/z7GvjHQcwF" target="_blank" id="discord-button" aria-label="Join our Discord">
@@ -81,5 +97,6 @@
 </a>
 <div id="version-label"></div>
 <script src="/assets/js/version.js"></script>
+<script src="/assets/js/2F_SBRmainscript.js" defer></script>
 </body>
 </html>

@@ -19,61 +19,42 @@
 </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/common.js"></script>
-
+  <title>Clothing Collection Lookup</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/common.js"></script>
+  
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 
 
-
 <body>
-  <nav class="menu">
+<nav class="menu">
   <a href="/index.html" class="nav-link">Home</a>
-  <a href="/features/ccl_f1/ccl.html" class="nav-link">Lookup</a>
+  <a href="/features/ccl_f1/ccl.html" class="nav-link active">Lookup</a>
   <a href="/features/suggestions/suggestions.html" class="nav-link">Suggestions</a>
 </nav>
 
-  <div class="container">
-    <h1>Welcome to UBET (Uranium's Business Empire Toolbox)</h1>
-    <p>Explore the tools below:</p>
+<div class="container">
+  <h1>Clothing Collection Search</h1>
+  <div id="infoBox">You can also search by typing part of the name — like "timeless" or "grunge".</div>
+  <input type="text" id="searchInput" placeholder="Enter collection name">
+  <button onclick="searchCollection()">Search</button>
 
-    <div class="feature-grid">
-      <div class="feature-card" onclick="location.href='features/ccl_f1/ccl.html'">
-        <h2>Clothing Collection Lookup</h2>
-        <p>Search through collections and styles.</p>
-      </div>
+  <!-- Results list -->
+  <div id="resultsList"></div>
 
-      <div class="feature-card disabled">
-        <h2>More Coming Soon</h2>
-        <p>Stay tuned for new tools.</p>
-      </div>
-
-  <div class="suggestion-bar" onclick="location.href='features/suggestions/suggestions.html'">
-  Make a Suggestion / Report a Bug
+  <!-- Detailed view -->
+  <div id="resultDetail" style="display:none;">
+    <div id="result"></div>
 </div>
-    </div>
-    <h2>V1.1 out now!</h2>
-    <b>What's new?</b>
-    <p> -Navigation arrows</p>
-        -Homepage</p>
-        -Credits</p>
-        -Suggestions page</p>
-        -Navigation Menu</p>
-        -Made a logo and name (UBET)</p>
-        -Discord Server</p>
-        -Clothing Collection Lookup optimization</p>
-    <footer>
-      <h2>Credits</h2>
-      <p>Created by Uranium. Thanks to the people who gave suggestions and reported bugs.</p>
-    </footer>
 
-   
-  </div>
 
-  <!-- Default Bottom (Socials and version and stuff) -->
+<script src="/assets/js/1F_CCLdata.js"></script>
+<script src="/assets/js/1F_CCLmainscript.js"></script>
+
+
+  <!-- Default Bottom (Socials and version and other stuff) -->
 <a href="https://discord.gg/z7GvjHQcwF" target="_blank" id="discord-button" aria-label="Join our Discord">
   <svg viewBox="0 0 16 16" fill="currentColor" width="24" height="24" aria-hidden="true">
     <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>

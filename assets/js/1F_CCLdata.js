@@ -1,4 +1,4 @@
-const clothingData = [
+window.collections = [
   { number: 1, name: "Technology in Clothing", style: "Technological clothes", quality: "Premium fabrics", price: "Medium", audience: "Businessmen" },
   { number: 2, name: "Retro style Return", style: "Retro style", quality: "Premium fabrics", price: "Medium", audience: "Teenagers and young adults" },
   { number: 3, name: "Rebellion Against Tradition", style: "Rebel style", quality: "Budget fabrics", price: "Affordable", audience: "Teenagers and young adults" },
@@ -60,3 +60,9 @@ const clothingData = [
   { number: 59, name: "Street Anarchy", style: "Streetwear", quality: "Medium quality", price: "Affordable", audience: "Teenagers and young adults" },
   { number: 60, name: "Business style of the future", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Businessmen" },
 ];
+
+// format: { number: 60, name: "", style: "", quality: "", price: "", audience: "" }, 
+// styles: Modern Fashion, Retro style, Business style, Streetwear, Bright glamor,  Technological clothes, Rebel style
+// qualities: Budget fabrics, Medium quality, Premium fabrics, Exclusive fabrics
+// prices: Affordable, Medium, High
+// audiences: Mass market, Middle class, Premium class, Teenagers and young adults, Businessmen

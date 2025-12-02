@@ -7,7 +7,7 @@ window.collections = [
   { number: 6, name: "Street Comfort", style: "Streetwear", quality: "Medium quality", price: "Affordable", audience: "Teenagers and young adults" },
   { number: 7, name: "Business Chic", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Teenagers and young adults" },
   { number: 8, name: "Freedom Festival", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Teenagers and young adults" },
-  { number: 9, name: "Sports as a lifestyle", style: "Streetwear", quality: "Premium fabrics", price: "Medium", audience: "Premium class" },
+  { number: 9, name: "Sports as a lifestyle", style: "Streetwear", quality: "Premium fabrics", price: "Medium", audience: "Medium class" },
   { number: 10, name: "Digital Age", style: "Technological clothes", quality: "Premium fabrics", price: "High", audience: "Premium class" },
   { number: 11, name: "Minimalism in fashion", style: "Modern fashion", quality: "Premium fabrics", price: "High", audience: "Premium class" },
   { number: 12, name: "The return of grunge", style: "Rebel style", quality: "Medium quality", price: "Affordable", audience: "Teenagers and young adults" },

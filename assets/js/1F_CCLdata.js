@@ -48,7 +48,7 @@ window.collections = [
   { number: 47, name: "Urban adaptation", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Middle class" },
   { number: 48, name: "Unique design solutions", style: "Bright glamor", quality: "Exclusive fabrics", price: "High", audience: "Premium class" },
   { number: 49, name: "A new look at the classics", style: "Business style", quality: "Medium quality", price: "Medium", audience: "Businessmen" },
-  { number: 50, name: "Urban comfort", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Middle class" },
+  { number: 50, name: "Urban comfort", style: "Streetwear", quality: "Medium quality", price: "Medium", audience: "Teenagers and young adults" },
   { number: 51, name: "Street Sport Chic", style: "Streetwear", quality: "Medium quality", price: "Medium", audience: "Teenagers and young adults" },
   { number: 52, name: "Glamor of the 2000s", style: "Bright glamor", quality: "Medium quality", price: "Medium", audience: "Teenagers and young adults" },
   { number: 53, name: "Brutal Fashion", style: "Rebel style", quality: "Budget fabrics", price: "Affordable", audience: "Teenagers and young adults" },

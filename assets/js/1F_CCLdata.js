@@ -20,7 +20,7 @@ window.collections = [
   { number: 19, name: "Cyberpunk Fashion", style: "Technological clothes", quality: "Premium fabrics", price: "High", audience: "Teenagers and young adults" },
   { number: 20, name: "Romantic Style", style: "Modern fashion", quality: "Premium fabrics", price: "High", audience: "Middle class" },
   { number: 21, name: "Gangster chic", style: "Retro style", quality: "Premium fabrics", price: "High", audience: "Premium class" },
-  { number: 22, name: "Second Life", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Mass market" },
+  { number: 22, name: "The second life of clothes", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Mass market" },
   { number: 23, name: "Total chaos", style: "Rebel style", quality: "Budget fabrics", price: "Affordable", audience: "Teenagers and young adults" },
   { number: 24, name: "Gothic Fashion", style: "Rebel style", quality: "Medium quality", price: "Medium", audience: "Teenagers and young adults" },
   { number: 25, name: "Timeless Classic", style: "Business style", quality: "Premium fabrics", price: "High", audience: "Businessmen" },

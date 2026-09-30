@@ -37,7 +37,7 @@ window.collections = [
   { number: 36, name: "Summer Festival Style", style: "Bright glamor", quality: "Medium quality", price: "Medium", audience: "Teenagers and young adults" },
   { number: 37, name: "Urban Dynamics", style: "Modern fashion", quality: "Medium quality", price: "Medium", audience: "Middle class" },
   { number: 38, name: "Glamorous Evening", style: "Bright glamor", quality: "Premium fabrics", price: "High", audience: "Premium class" },
-  { number: 39, name: "Retro style Boom", style: "Retro style", quality: "Premium fabrics", price: "Medium", audience: "Mass market" },
+  { number: 39, name: "Retro Boom", style: "Retro style", quality: "Premium fabrics", price: "Medium", audience: "Mass market" },
   { number: 40, name: "Sporty Elegance", style: "Streetwear", quality: "Premium fabrics", price: "Medium", audience: "Middle class" },
   { number: 41, name: "Free Street style", style: "Streetwear", quality: "Medium quality", price: "Affordable", audience: "Mass market" },
   { number: 42, name: "Glamorous classic", style: "Bright glamor", quality: "Premium fabrics", price: "High", audience: "Premium class" },
